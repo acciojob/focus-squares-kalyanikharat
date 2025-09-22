@@ -1,16 +1,17 @@
-const squares = document.querySelectorAll('.square');
+let sqr = document.querySelectorAll(".square");
 
-squares.forEach((square) => {
-    square.addEventListener('mouseover', () => {
-        squares.forEach((s) => {
-            if (s !== square) {
-                s.style.backgroundColor = '#6F4E37'; 
-            }
-        });
+sqr.forEach(sqaure => {
+  sqaure.addEventListener("mouseover", () => {
+    sqr.forEach(sqrs => {
+      if (sqrs !== sqaure) {
+        sqrs.style.backgroundColor = "#6F4E37"; 
+      }
     });
+  });
 
-    square.addEventListener('mouseout', () => {
-        squares.forEach((s) => {
-            s.style.backgroundColor = '#E6E6FA'; 
-        });
-    
+  sqaure.addEventListener("mouseout", () => {
+    sqr.forEach(sqrs => {
+      sqrs.style.backgroundColor = "#E6E6FA"; 
+    });
+  });
+});
